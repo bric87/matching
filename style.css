@@ -1,0 +1,140 @@
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+html{
+    --img-width: 200px;
+    --img-height: 250px;
+}
+
+body{
+    background-color: rgb(44, 44, 44);
+    /*background: linear-gradient(28deg, rgba(133,56,126,1) 0%, rgba(30,121,124,1) 100%);*/
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    margin:30px auto;
+
+}
+
+#play-area{
+    margin: 20px auto;
+    width: 1000px;
+    height: auto;
+    padding: 2%;
+    /*
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    */
+    background-color: rgb(44, 44, 44);
+    box-shadow: 0 0 30px white;
+    border-radius: 30px;
+}
+
+#count{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: 20px auto;
+}
+
+#play-area button{
+    border-radius: 5px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.card{
+    margin: auto;
+    height: var(--img-height);
+    width: var(--img-width);
+    background-color: rgb(104, 158, 104);
+    border-radius: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.card:hover{
+    background-color: rgb(141, 199, 141);;
+}
+
+#play-again-button {
+    display: none;
+}
+
+img{
+    height: var(--img-height);
+    width: var(--img-width);
+    border-radius: 10px;
+}
+
+.no-touch{
+    pointer-events: none; 
+    box-shadow: 0px 0px 10px red; 
+}
+
+.never-touch{
+    pointer-events: none;
+    box-shadow: 0px 0px 10px lightblue;
+}
+
+
+.small {
+    margin: auto;
+    height: calc(var(--img-height)*.8);
+    width: calc(var(--img-width)*.8);
+    background-color: rgb(104, 158, 104);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.smallImg{
+    height: calc(var(--img-height)*.8);
+    width: calc(var(--img-width)*.8);
+    border-radius: 10px;
+}
+
+ .four-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+   
+}
+
+.three-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+   
+}
+
+#play-again{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin: 20px auto;
+}
+
+#play-again-button{
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+}
+
+button{
+    border-radius: 7px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.3;
+    background-color: rgb(72, 72, 72);
+}
+
+button:hover{
+    background-color: rgb(97, 97, 97);
+}
